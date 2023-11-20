@@ -10,7 +10,7 @@ use fake::Fake;
 
 #[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<()> {
-    let surreal = surrealdb::engine::any::connect(format!("ws://localhost:12773"))
+    let surreal = surrealdb::engine::any::connect(format!("ws://localhost:8002"))
         .await
         .unwrap();
 
