@@ -1,0 +1,20 @@
+version: "3"
+services:
+
+  surreal:
+    image: surrealdb/surrealdb:1.0.0
+    restart: always
+    ports:
+      - "12773:8000"
+    command: 
+      - start
+
+  surreal_beta9:
+    image: surrealdb/surrealdb:1.0.0-beta.9
+    restart: always
+    ports:
+      - "12774:8000"
+    command: 
+      - start
+      - --user=root
+      - --pass=root
