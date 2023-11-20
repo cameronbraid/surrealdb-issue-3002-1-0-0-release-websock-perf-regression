@@ -2,6 +2,13 @@ Standalone Reproduction for
 
 https://github.com/surrealdb/surrealdb/issues/3002
 
+
+Start Surreal DB instances
+
+```
+docker compose up -d
+```
+
 Beta-9 is fast :
 
 ```
